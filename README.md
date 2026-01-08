@@ -1,6 +1,7 @@
 # BLM0111_24360859079
 İLAYDA GÜNDOĞDU
 24360859079
+kod linkim: https://1drv.ms/f/c/13e97621a3309053/IgA5gk9zoeOlSI6PoAomDlK7AVvZlQcVMB5_lJBk4Svs430?e=yPoVaO
 
 # Fizik Deneyleri Simülasyonu (C Programlama)
 
