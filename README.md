@@ -1,79 +1,92 @@
 # BLM0111_24360859079
-İLAYDA GÜNDOĞDU
-24360859079
-kod linkim: https://1drv.ms/f/c/13e97621a3309053/IgA5gk9zoeOlSI6PoAomDlK7AVvZlQcVMB5_lJBk4Svs430?e=yPoVaO
+İLAYDA GÜNDOĞDU  
+24360859079  
+Code link: https://1drv.ms/f/c/13e97621a3309053/IgA5gk9zoeOlSI6PoAomDlK7AVvZlQcVMB5_lJBk4Svs430?e=yPoVaO
 
-# Fizik Deneyleri Simülasyonu (C Programlama)
+# Physics Experiments Simulation (C Programming)
 
-Bu proje, C programlama dili kullanılarak Güneş Sistemi gezegenleri üzerinde gerçekleştirilen çeşitli fizik deneylerinin simülasyonunu yapmak amacıyla geliştirilmiştir. Program, kullanıcıdan alınan girdiler doğrultusunda seçilen deneyleri her gezegen için ayrı ayrı hesaplayarak sonuçları birimleriyle birlikte konsol ekranına yazdırmaktadır.
+This project was developed in C to simulate various physics experiments conducted on the planets of the Solar System. Based on user input, the program performs calculations for the selected experiment on each planet and displays the results with units on the console.
 
-Proje, temel fizik formüllerinin programlama yoluyla uygulanmasını ve C dilinde dizi, pointer, fonksiyon ve kullanıcı girişi kontrolü gibi konuların pekiştirilmesini hedeflemektedir.
+The project aims to apply basic physics formulas programmatically and reinforce concepts such as arrays, pointers, functions, and user input validation in C.
 
-## Programın Özellikleri
+---
 
-- Gezegenlerin yerçekimi ivmeleri bir dizi içerisinde tutulmaktadır.
-- Tüm deneyler ayrı fonksiyonlar halinde tasarlanmıştır.
-- Diziler üzerinde yapılan tüm işlemler pointer mantığı ile gerçekleştirilmiştir.
-- Kullanıcıdan alınan fiziksel büyüklüklerin negatif girilmesi durumunda, değerler ternary operatörü kullanılarak mutlak değere dönüştürülmektedir.
-- Kullanıcı, bir deney tamamlandıktan sonra tekrar deney seçimi yapabilmektedir.
-- Menü ekranında `-1` seçeneği girildiğinde program güvenli bir şekilde sonlandırılmaktadır.
-- Sayısal olmayan veya geçersiz menü girişleri kontrol edilmekte ve kullanıcı uyarılmaktadır.
-- Deney sonuçları birimleriyle birlikte sunulmaktadır.
+## Program Features
 
-## Uygulamada Bulunan Deneyler
+- Planetary gravitational accelerations are stored in an array.  
+- Each experiment is implemented as a separate function.  
+- All operations on arrays are performed using pointers.  
+- Negative user input for physical quantities is converted to absolute values using the ternary operator.  
+- After completing an experiment, the user can select another experiment.  
+- Entering `-1` in the menu safely terminates the program.  
+- Non-numeric or invalid menu inputs are checked, and the user is notified.  
+- Experiment results are displayed with units.
 
-Programda aşağıdaki fizik deneyleri yer almaktadır:
+---
 
-1. Serbest Düşme  
-2. Yukarı Atış  
-3. Ağırlık Hesabı  
-4. Potansiyel Enerji  
-5. Hidrostatik Basınç  
-6. Arşimet Kuvveti  
-7. Sarkaç Periyodu  
-8. İp Gerilmesi  
-9. Asansörde Etki Eden Kuvvet  
+## Included Experiments
 
-Her deney:
-- Kullanıcıdan gerekli fiziksel büyüklükleri alır,
-- Güneş Sistemi’ndeki tüm gezegenler için hesaplama yapar,
-- Sonuçları gezegen bazında alt alta ekrana yazdırır.
+The following physics experiments are implemented:
 
-## Gezegen Yerçekimi İvmeleri
+1. Free Fall  
+2. Vertical Throw  
+3. Weight Calculation  
+4. Potential Energy  
+5. Hydrostatic Pressure  
+6. Archimedes’ Force  
+7. Pendulum Period  
+8. Rope Tension  
+9. Force in an Elevator  
 
-Gezegenlerin yerçekimi ivmeleri aşağıdaki sırayla bir dizi içerisinde saklanmaktadır:
+Each experiment:
+- Collects the required physical quantities from the user,  
+- Calculates results for all planets in the Solar System,  
+- Displays the results per planet on the console.
 
-| İndis | Gezegen  | Yerçekimi (m/s²) |
-|------|---------|------------------|
-| 0    | Merkür  | 3.70             |
-| 1    | Venüs   | 8.87             |
-| 2    | Dünya   | 9.81             |
-| 3    | Mars    | 3.71             |
-| 4    | Jüpiter | 24.79            |
-| 5    | Satürn  | 10.44            |
-| 6    | Uranüs  | 8.69             |
-| 7    | Neptün  | 11.15            |
-| 8    | Plüton  | 0.62             |
+---
 
-## Programın Çalışma Akışı
+## Planetary Gravitational Accelerations
 
-1. Program başlatıldığında kullanıcıdan bilim insanının adı istenir.
-2. Deney menüsü ekrana yazdırılır.
-3. Kullanıcı bir deney seçer.
-4. Seçilen deneye ait fiziksel büyüklükler kullanıcıdan alınır.
-5. Deney sonuçları tüm gezegenler için hesaplanarak ekrana yazdırılır.
-6. Kullanıcı yeni bir deney seçebilir.
-7. Menü ekranında `-1` girildiğinde program sonlandırılır.
+The gravitational accelerations of the planets are stored in the array as follows:
 
-## Kullanılan Programlama Yapıları
+| Index | Planet  | Gravity (m/s²) |
+|-------|---------|----------------|
+| 0     | Mercury | 3.70           |
+| 1     | Venus   | 8.87           |
+| 2     | Earth   | 9.81           |
+| 3     | Mars    | 3.71           |
+| 4     | Jupiter | 24.79          |
+| 5     | Saturn  | 10.44          |
+| 6     | Uranus  | 8.69           |
+| 7     | Neptune | 11.15          |
+| 8     | Pluto   | 0.62           |
 
-- Fonksiyonlar
-- Diziler
-- Pointer kullanımı
-- Ternary operatörü
-- Döngüler (`do-while`)
-- Koşul yapıları (`if-else`)
-- Kullanıcı girişi doğrulama (`scanf` dönüş değeri kontrolü)
+---
 
-## Proje Amacı
-Bu projenin amacı, C programlama dili kullanılarak fiziksel problemlerin algoritmik olarak çözülmesi ve kullanıcı etkileşimli bir konsol uygulamasının geliştirilmesidir.
+## Program Workflow
+
+1. The program prompts the user for the scientist's name.  
+2. The experiment menu is displayed.  
+3. The user selects an experiment.  
+4. The program collects the relevant physical quantities for the chosen experiment.  
+5. Results are calculated for all planets and displayed.  
+6. The user can select a new experiment.  
+7. Entering `-1` in the menu terminates the program.
+
+---
+
+## Programming Concepts Used
+
+- Functions  
+- Arrays  
+- Pointers  
+- Ternary operator  
+- Loops (`do-while`)  
+- Conditional statements (`if-else`)  
+- User input validation (`scanf` return value check)
+
+---
+
+## Project Objective
+
+The purpose of this project is to solve physical problems algorithmically using C programming and develop an interactive console application.
